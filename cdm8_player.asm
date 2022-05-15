@@ -16,7 +16,7 @@ asect 0xE0
 	player_score: 		ds 1
 	cdm8_score: 		ds 1
 	cdm8_bat_y_coord: 	ds 1
-	ball_x 			ds 1
+	ball_x:			ds 1
 	ball_y:			ds 1
 	vx:			ds 1
 	vy:			ds 1	
@@ -31,6 +31,7 @@ cdm8_player:
 #***********************************************
 #formula for counting
 #d = y + (240 - x) / vx * vy - 255
+#res = 255 - d
 #***********************************************
 	
 	#load values
