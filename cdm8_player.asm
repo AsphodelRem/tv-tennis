@@ -3,7 +3,6 @@
 # 0xE2 - coordinates of cdm8's bat
 # 0xE3, 0xE4 - ball's coordinates
 # 0xE5, 0xE6 - ball's velocity by x and y
-# 0xE7 - game flag, if this flag = 1, game over
 ###########################################
 
 #load some value into register from an address (ldi and ld together)						
@@ -17,11 +16,10 @@ asect 0xE0
 	player_score: 		ds 1
 	cdm8_score: 		ds 1
 	cdm8_bat_y_coord: 	ds 1
-	ball_x: 			ds 1
-	ball_y: 			ds 1
-	vx:					ds 1
-	vy:					ds 1	
-	game_over:			ds 1
+	ball_x 			ds 1
+	ball_y:			ds 1
+	vx:			ds 1
+	vy:			ds 1	
 
 asect 0x00
 
